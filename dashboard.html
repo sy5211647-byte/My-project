@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard | PrepPath</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dashboard-page">
+    <header class="dashboard-header">
+      <a href="index.html" class="dashboard-logo">PrepPath</a>
+
+      <nav class="dashboard-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="quiz.html">Aptitude</a>
+        <a href="coding.html">Coding</a>
+        <button id="logoutBtn">Logout</button>
+      </nav>
+    </header>
+
+    <main class="dashboard-main">
+      <section class="welcome-section">
+        <p class="eyebrow">STUDENT DASHBOARD</p>
+        <h1>Welcome, <span id="studentName">Student</span>!</h1>
+        <p>Prepare for placements and track your progress.</p>
+      </section>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <p>Total Quizzes</p>
+          <h2 id="totalQuizzes">0</h2>
+        </div>
+
+        <div class="stat-card">
+          <p>Average Score</p>
+          <h2 id="averageScore">0%</h2>
+        </div>
+
+        <div class="stat-card">
+          <p>Coding Questions</p>
+          <h2 id="codingCount">0</h2>
+        </div>
+      </section>
+
+      <section class="dashboard-section">
+        <h2>Start Your Preparation</h2>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3>Aptitude Quiz</h3>
+            <p>Practice logical reasoning, maths and aptitude.</p>
+            <a href="quiz.html" class="dashboard-action"> Start Quiz → </a>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Coding Practice</h3>
+            <p>Improve your programming and problem-solving skills.</p>
+            <a href="coding.html" class="dashboard-action">
+              Practice Coding →
+            </a>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">📈</div>
+            <h3>Progress Report</h3>
+            <p>Review your quiz scores and learning progress.</p>
+            <a href="progress.html" class="dashboard-action">
+              View Progress →
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="dashboard-section">
+        <h2>Recent Quiz Results</h2>
+        <div id="recentResults" class="results-box">
+          <p>No quiz results yet. Complete your first quiz!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="dashboard-footer">
+      PrepPath — Your Placement Preparation Partner
+    </footer>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

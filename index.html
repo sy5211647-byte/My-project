@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Student Placement Preparation Portal</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h2 class="logo">Prep<span>Path</span></h2>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="leaderboard.html">🏆 Leaderboard</a>
+      </div>
+      <a href="login.html" class="dashboard-action"> Get Started → </a>
+    </nav>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="tagline">YOUR CAREER STARTS HERE</p>
+
+        <h1>
+          Prepare Smart.<br />
+          <span>Get Placed.</span>
+        </h1>
+
+        <p class="hero-description">
+          One platform for aptitude practice, coding questions, mock tests and
+          placement preparation progress.
+        </p>
+
+        <a href="#features" class="start-btn"> Start Preparing </a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-icon">🎯</div>
+        <h3>Your Placement Journey</h3>
+        <p>Learn • Practice • Improve</p>
+
+        <div class="mini-stat">
+          <span>Daily practice</span>
+          <strong>30 min</strong>
+        </div>
+
+        <div class="mini-stat">
+          <span>Career goal</span>
+          <strong>Get Placed</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <p class="section-label">LEARN AND PRACTICE</p>
+      <h2>Everything You Need to Prepare</h2>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>Aptitude Quiz</h3>
+          <p>Practice maths, reasoning and verbal questions.</p>
+          <button onclick="openFeature('Aptitude Quiz')">Start Quiz →</button>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">💻</div>
+          <h3>Coding Practice</h3>
+          <p>Improve your programming and problem-solving skills.</p>
+          <button onclick="openFeature('Coding Practice')">
+            Solve Problems →
+          </button>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Progress Reports</h3>
+          <p>Track your scores and preparation progress.</p>
+          <button onclick="openFeature('Progress Reports')">
+            View Progress →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="progress-section" id="progress">
+      <h2>Your Progress Dashboard</h2>
+      <p>Your preparation summary will appear here.</p>
+
+      <div class="progress-grid">
+        <div class="progress-card">
+          <h3>0</h3>
+          <p>Quizzes Completed</p>
+        </div>
+
+        <div class="progress-card">
+          <h3>0</h3>
+          <p>Coding Questions Solved</p>
+        </div>
+
+        <div class="progress-card">
+          <h3>0%</h3>
+          <p>Overall Progress</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 PrepPath | Student Placement Preparation Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

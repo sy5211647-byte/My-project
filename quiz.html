@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aptitude Quiz | PrepPath</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="quiz-page">
+    <header class="dashboard-header">
+      <a href="index.html" class="dashboard-logo">PrepPath</a>
+      <nav class="dashboard-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="quiz.html">Aptitude Quiz</a>
+        <a href="coding.html">Coding</a>
+      </nav>
+    </header>
+
+    <main class="quiz-container">
+      <div class="quiz-heading">
+        <p class="eyebrow">PLACEMENT PREPARATION</p>
+        <h1>Aptitude Quiz</h1>
+        <p>Test your skills and improve your performance.</p>
+      </div>
+
+      <section class="quiz-card" id="quizCard">
+        <div class="quiz-top">
+          <span id="questionNumber">Question 1 of 5</span>
+          <span id="scorePreview">Score: 0</span>
+        </div>
+
+        <div class="quiz-progress">
+          <div id="quizProgressBar"></div>
+        </div>
+
+        <h2 id="questionText">Question will appear here</h2>
+
+        <div id="optionsContainer" class="options-container"></div>
+
+        <p id="quizMessage" role="status"></p>
+
+        <div class="quiz-buttons">
+          <button id="nextBtn" disabled>Next Question →</button>
+        </div>
+      </section>
+
+      <section class="quiz-card result-card" id="resultCard" hidden>
+        <div class="result-icon">🎉</div>
+        <h2>Quiz Completed!</h2>
+        <p id="finalScore"></p>
+        <p id="resultMessage"></p>
+        <button id="retryBtn">Try Again</button>
+        <a href="dashboard.html" class="dashboard-action"
+          >Back to Dashboard →</a
+        >
+      </section>
+    </main>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

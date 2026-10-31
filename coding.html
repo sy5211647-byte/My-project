@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Practice | PrepPath</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="coding-page">
+    <header class="dashboard-header">
+      <a href="index.html" class="dashboard-logo">PrepPath</a>
+
+      <nav class="dashboard-nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="quiz.html">Aptitude Quiz</a>
+        <a href="coding.html">Coding Practice</a>
+      </nav>
+    </header>
+
+    <main class="coding-main">
+      <section class="coding-heading">
+        <p class="eyebrow">BUILD YOUR SKILLS</p>
+        <h1>Coding Practice</h1>
+        <p>Solve programming challenges and prepare for placements.</p>
+      </section>
+
+      <section class="coding-toolbar">
+        <label for="difficulty">Choose Difficulty:</label>
+
+        <select id="difficulty">
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          <option value="Advanced">Advanced</option>
+        </select>
+
+        <span id="completedCount">Completed: 0</span>
+      </section>
+
+      <section class="coding-layout">
+        <aside class="coding-question-list">
+          <h2>Questions</h2>
+          <div id="questionList"></div>
+        </aside>
+
+        <section class="coding-editor">
+          <span id="questionLevel" class="level-badge">Beginner</span>
+          <h2 id="codingQuestionTitle">Question title</h2>
+          <p id="codingQuestionDescription"></p>
+
+          <div class="example-box">
+            <h3>Example</h3>
+            <pre id="codingExample"></pre>
+          </div>
+
+          <label for="answerInput">Your Answer</label>
+          <textarea
+            id="answerInput"
+            rows="7"
+            placeholder="Write your answer here..."
+          ></textarea>
+
+          <div class="coding-actions">
+            <button id="checkAnswerBtn">Check Answer</button>
+            <button id="showHintBtn" class="secondary-btn">Show Hint</button>
+          </div>
+
+          <p id="codingFeedback" role="status"></p>
+          <p id="codingHint" hidden></p>
+        </section>
+      </section>
+    </main>
+
+    <footer class="dashboard-footer">
+      PrepPath — Keep Learning, Keep Practising
+    </footer>
+
+    <script src="coding.js"></script>
+  </body>
+</html>

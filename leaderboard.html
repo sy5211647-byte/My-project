@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Leaderboard | PrepPath</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="leaderboard.js" defer></script>
+  </head>
+
+  <body class="leaderboard-page">
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="index.html" class="logo">PrepPath</a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="leaderboard.html" class="active">🏆 Leaderboard</a>
+        <a href="login.html" class="get-started-btn">Get Started</a>
+      </div>
+    </nav>
+
+    <!-- LEADERBOARD HEADER -->
+    <main class="leaderboard-container">
+      <header class="leaderboard-header">
+        <span class="main-crown">👑</span>
+        <h1>Leaderboard</h1>
+        <p>Compete, learn and become a placement champion!</p>
+      </header>
+
+      <!-- TOP 3 STUDENTS -->
+      <section class="top-three" aria-label="Top three students">
+        <article class="top-card second-place">
+          <span class="rank-icon">🥈</span>
+          <span class="rank-label">RANK #2</span>
+          <h2>Rahul Sharma</h2>
+          <p>SECOND PLACE</p>
+          <strong>90%</strong>
+          <span class="score-label">Quiz Score</span>
+        </article>
+
+        <article class="top-card first-place">
+          <span class="rank-icon king-icon">👑</span>
+          <span class="rank-label">RANK #1</span>
+          <h2>Aman Verma</h2>
+          <p class="king-label">KING</p>
+          <strong>95%</strong>
+          <span class="score-label">Quiz Score</span>
+        </article>
+
+        <article class="top-card third-place">
+          <span class="rank-icon">🥉</span>
+          <span class="rank-label">RANK #3</span>
+          <h2>Priya Singh</h2>
+          <p>THIRD PLACE</p>
+          <strong>85%</strong>
+          <span class="score-label">Quiz Score</span>
+        </article>
+      </section>
+
+      <!-- ALL STUDENTS -->
+      <section class="ranking-section">
+        <div class="ranking-heading">
+          <div>
+            <h2>🏆 All Students</h2>
+            <p>Every score counts. Keep improving!</p>
+          </div>
+
+          <span id="studentCount">0 Students</span>
+        </div>
+
+        <div class="table-wrapper">
+          <table class="ranking-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Student</th>
+                <th>Quiz Score</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody id="leaderboardBody">
+              <!-- JavaScript will add student rows here -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="demo-notice">
+        Demo leaderboard: sample names and scores are used for now.
+      </p>
+    </main>
+  </body>
+</html>
